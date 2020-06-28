@@ -7,7 +7,10 @@
     <style>
         .grid{
             display: grid;
-            grid-template-columns: auto auto auto auto;
+            /* grid-template-columns: 200px auto 200px; */
+            /* grid-template-columns: repeat(3,auto); */
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-gap: 1rem;
         }
         
         .item{
@@ -17,6 +20,11 @@
             font-size: 1.3rem;
             font-weight: bold;
             text-align: center;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid: 1.5rem;
         }
 
     </style>
@@ -30,5 +38,17 @@
         <div class="item">Item 5</div>
         <div class="item">Item 6</div>
     </div>
+
+    <main>
+        <section>
+            <h3>Welocme to my website</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sint doloribus quas porro voluptatem modi est magni nihil similique odio!</p>
+        </section>
+        <aside>
+            <h3>hello</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nostrum.</p>
+
+        </aside>
+    </main>
 </body>
 </html>
